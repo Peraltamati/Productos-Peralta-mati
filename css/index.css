@@ -8,7 +8,7 @@
 body {
   font-family: 'El Messiri', sans-serif;
   font-size: 15px;
-  background-image: url("/Media/S3oft_Wave_Background.jpg");
+  background-image: url("../Media/S3oft_Wave_Background.jpg");
   background-size: cover; }
   body h1 {
     color: orange; }
