@@ -53,8 +53,8 @@ body {
   .contenNos .seccion1 {
     display: flex;
     justify-content: center; }
-    .contenNos .seccion1 img {
-      max-width: 100%; }
+  .contenNos .imagen {
+    max-width: 100%; }
 
 .contenNos .header {
   grid-area: header; }
@@ -139,8 +139,8 @@ body {
   margin-top: 20px; }
 
 .tarjeta__img {
-  width: 300px;
-  height: 180px;
+  width: 100%;
+  height: 100%;
   margin-right: 30px; }
 
 .tarjeta__titulo {
