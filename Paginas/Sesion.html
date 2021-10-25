@@ -16,10 +16,11 @@
 </head>
 
 <body class="body1">
+    <div class=""> 
     <header class="header">
         <!-- Inicio header-->
 
-        <h1>Bienvenido/a ingreso a sesion con exito!</h1><!-- Utilice la etiqueta h1 para trabajar con dicha etiqueta-->
+        <h1>Inicio de Sesion</h1><!-- Utilice la etiqueta h1 para trabajar con dicha etiqueta-->
         <img src="" alt=""> <!-- agregue la etiqueta img que iría allí el LOGO-->
 
         <nav class="nav">
@@ -35,26 +36,51 @@
         </nav>
 
     </header><!-- fin header-->
+                    </div>
+    <div class="contain"><!-- Inicio de div contenedor del formulario--> 
+        <div class="form-box">
+            <div class="button-box">
+                <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesion</button>
+               <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <button type="submit" class="submit-btn">Acceder</button>
+            </form>
 
-    <main><!-- inicio main-->
+            <form id="registrar" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="input-field" placeholder="Correo" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <button type="submit" class="submit-btn">Registrar</button>
+            </form>
 
-        <section><!-- inicio section img-->
-            <img src="" alt="">
-        </section><!-- fin section img-->
 
-        <section><!-- inicio section-->
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias obcaecati dolores optio similique
-                rerum atque voluptates nulla ad aut illo consectetur delectus expedita cumque enim provident, numquam
-                explicabo porro suscipit.
-            </p>
-        </section><!-- fin section-->
-
-    </main><!-- fin main-->
+        </div>
+    </div><!-- fin de div contenedor del formulario--> 
 
     <footer>
 
     </footer>
+       
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+
+        function login(){
+           x.style.left= "10px";
+           y.style.left= "450px"; 
+           z.style.left= "0px";
+        }
+        function registrar(){
+            x.style.left= "-400px";
+           y.style.left= "10px"; 
+           z.style.left= "120px"; 
+        }
+    </script>
 </body>
 
 </html>
