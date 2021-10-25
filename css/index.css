@@ -43,10 +43,18 @@ body {
 /* FIN HEADER! */
 /*pages*/
 .form {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 10px; }
+
+.fondo {
+  background: rgba(62, 69, 81, 0.3);
+  border-radius: 5px; }
+
+.separar {
+  display: flex;
+  margin-top: 10px; }
 
 .fondo {
   background: rgba(62, 69, 81, 0.3);
