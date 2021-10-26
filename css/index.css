@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* imports */
 /* global  */
 * {
@@ -93,6 +94,9 @@ body {
 .contenNos .video {
   grid-area: video; }
 
+.nosotros {
+  font-size: 1.3rem; }
+
 @media screen and (min-width: 768px) {
   .contenNos {
     grid-template-columns: repeat(2, 1fr);
@@ -111,7 +115,7 @@ body {
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header header" "imagen1 divTexto1 divTexto1-2 " "imagen2 divTexto2 divTexto2-2" "imagen3 divTexto3 divTexto3-3"; }
+  grid-template-areas: "header header header" "imagen1 divTexto1 divTexto1-2 " "imagen2 divTexto2 divTexto2-2" "imagen3 divTexto3 divTexto3-3" "imagen4 divTexto4 divTexto4-4"; }
   .contenedor1 .imgProducto {
     max-width: 100%; }
 
@@ -145,6 +149,15 @@ body {
 .contenedor1 .divTexto3-3 {
   grid-area: divTexto3-3; }
 
+.contenedor1 .imagen4 {
+  grid-area: imagen4; }
+
+.contenedor1 .divTexto4 {
+  grid-area: divTexto4; }
+
+.contenedor1 .divTexto4-4 {
+  grid-area: divTexto4-4; }
+
 .conten {
   max-width: 1000px;
   width: 90%;
@@ -167,45 +180,68 @@ body {
 
 .tarjeta__titulo {
   font-size: 1.5rem;
+  margin-bottom: 8px; }
+
+.tarjeta_titulo {
+  font-size: 1.1rem;
   margin-bottom: 20px; }
 
 .tarjeta__parrafo {
   line-height: 28px;
   font-size: 1rem; }
 
-.boton {
+.tamañoCaracter {
+  font-size: 1rem; }
+
+.Precio {
+  font-size: 1.5rem;
+  color: rgba(8, 7, 7, 0.787);
+  margin-bottom: 20px; }
+
+.comprarbtn {
+  width: 250px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: auto;
+  text-decoration: none;
+  background-color: #0277bd;
+  color: white; }
+
+.anclaje {
+  margin-top: 10px;
   height: 20px;
   padding: 20px;
   background-color: rgba(173, 197, 38, 0.876);
   color: white;
   display: inline-block;
-  text-decoration: none; }
+  text-decoration: none;
+  border-radius: 5px; }
 
-@media screen and (max-width: 768px) {
+.parrafo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.7); }
+
+@media screen and (max-width: 800px) {
   .tarjeta {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .contenedor1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header"  "imagen1 imagen1 " "divTexto1 divTexto1" "divTexto1-2 divTexto1-2" "imagen2 imagen2" "divTexto2 divTexto2" "divTexto2-2 divTexto2-2" "imagen3 imagen3" "divTexto3 divTexto3" "divTexto3-3 divTexto3-3" "imagen4 imagen4" "divTexto4 divTexto4" "divTexto4-4 divTexto4-4"; } }
 
 /* FIN  PAGINA Productos! */
 .contain {
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 100%;
-  /*width: 100%;
-    max-width: 1500px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:"header""form-box" */ }
+  width: 100%; }
 
-/*.contain .header{
-    grid-area: header;
-}
-.contain .form-box{
-    grid-area: form-box;
-}*/
 .form-box {
   width: 370px;
   height: 455px;
@@ -296,4 +332,46 @@ body {
   margin-right: 10px;
   text-align: justify; }
 
+.main .btnver {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: auto;
+  text-decoration: none;
+  background-color: #ffa726;
+  color: white; }
+
 /* FIN GRIDS MOBILE FIRST INDEX */
+.fondoPagina {
+  background: #1a84d3;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cont {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 1.7;
+  color: #434343; }
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #1a84d3;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px; }

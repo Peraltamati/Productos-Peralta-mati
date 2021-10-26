@@ -14,7 +14,8 @@
     grid-template-areas: "header header header"
                         "imagen1 divTexto1 divTexto1-2 "
                         "imagen2 divTexto2 divTexto2-2"
-                        "imagen3 divTexto3 divTexto3-3";
+                        "imagen3 divTexto3 divTexto3-3"
+                        "imagen4 divTexto4 divTexto4-4";
 }
 
 .contenedor1 .header{
@@ -47,6 +48,15 @@
 .contenedor1 .divTexto3-3{
     grid-area: divTexto3-3;
 }
+.contenedor1 .imagen4{
+    grid-area: imagen4 ;
+}
+.contenedor1 .divTexto4{
+    grid-area: divTexto4;
+}
+.contenedor1 .divTexto4-4{
+    grid-area: divTexto4-4;
+}
 .conten {
 	max-width: 1000px;
 	width: 90%;
@@ -70,29 +80,78 @@
 }
 .tarjeta__titulo {
 	font-size:1.5rem;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
+}
+.tarjeta_titulo{
+    font-size: 1.1rem ;
+    margin-bottom: 20px;
 }
 
 .tarjeta__parrafo {
 	line-height: 28px;
 	font-size:1rem;
 }
+.tamañoCaracter{
+    font-size: 1rem;
+}
+.Precio{
+    font-size: 1.5rem;
+    color: rgba(8, 7, 7, 0.787);
+    margin-bottom: 20px;
+}
+.comprarbtn{
+    width: 250px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    text-decoration: none;
+    background-color: #0277bd;
+    color: white;
+}
 
-.boton{
+.anclaje{
+    margin-top: 10px;
 	height: 20px;
 	padding: 20px;
 	background-color: rgba(173, 197, 38, 0.876);
 	color: white;
 	display: inline-block;
 	text-decoration: none;
+  border-radius: 5px;
+}
+.parrafo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7) ;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
     .tarjeta{
 
         flex-direction: column;
         align-items: center ;
+    }
+    .contenedor1{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "header header" 
+                              "imagen1 imagen1 "
+                             "divTexto1 divTexto1"
+                             "divTexto1-2 divTexto1-2"
+                             "imagen2 imagen2"
+                             "divTexto2 divTexto2"
+                             "divTexto2-2 divTexto2-2"
+                             "imagen3 imagen3"
+                             "divTexto3 divTexto3"
+                             "divTexto3-3 divTexto3-3"
+                             "imagen4 imagen4"
+                             "divTexto4 divTexto4"
+                             "divTexto4-4 divTexto4-4"
     }
 
 }

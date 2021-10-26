@@ -3,22 +3,10 @@
     justify-content: center;
   height: 100%;
   width: 100%;
-   
-    /*width: 100%;
-    max-width: 1500px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:"header""form-box" */ 
+ 
 }
 
-/*.contain .header{
-    grid-area: header;
-}
-.contain .form-box{
-    grid-area: form-box;
-}*/
+
 .form-box{
     width: 370px;
     height: 455px; 
